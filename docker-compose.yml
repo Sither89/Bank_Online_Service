@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  project:
+    image: sither/bank-online
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo
+    networks:
+      - mern-app
+    links:
+      - mongo
+    
+  mongo:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    networks:
+      - mern-app
+    volumes:
+      - data:/data/db
+    
+networks:
+  mern-app:
+    driver: bridge
+volumes:
+  data:
+    driver: local
+  mongo-db:

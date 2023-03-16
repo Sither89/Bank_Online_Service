@@ -1,8 +1,14 @@
 // Requiring module
 const mongoose = require('mongoose');
 const User = require('./models/User');
+require('dotenv').config();
+
+var host;
+process.env.STATUS === 'production'
+  ? (host = process.env.DEV_HOST)
+  : (host = process.env.PROD_HOST);
 // Connection URL
-const url = 'mongodb://localhost:27017/BankDB';
+const url = 'mongodb://'+host+':27017/BankDB';
 console.log(url);
 
 const setupDB = async () => {
