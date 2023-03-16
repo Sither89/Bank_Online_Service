@@ -70,6 +70,10 @@ sudo apt update
 ```
 sudo apt install -y mongodb-org
 ```
+ * Start the MongoDB
+```
+sudo systemctl enable mongod
+```
 ### In project
 * Install the dependencies with npm. For server
 ```
