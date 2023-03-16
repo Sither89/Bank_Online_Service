@@ -1,0 +1,26 @@
+
+table{
+    width: 100%;
+}
+
+thead tr {
+    font-size: xx-large;
+}
+
+tr {
+    height: 10%;
+}
+
+td {
+    color: white;
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+tbody td{
+    font-size: medium;
+}
+
+
+  

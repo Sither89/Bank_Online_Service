@@ -1,0 +1,38 @@
+.color-background{
+  width: 100%;  
+  min-height: 100vh;
+  background-color: #333;
+}
+.hyperlink {
+  color: black;
+  font-size: x-large;
+}
+
+.btn_hyperlink {
+  padding: 2.5%;
+  background-color: #04e079;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn_hyperlink_withdraw {
+  padding: 2.5%;
+  background-color: #ff2c2c;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn_hyperlink_tran {
+  padding: 2.5%;
+  background-color: #d8d8d8;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.jumbotron{
+  background: -webkit-linear-gradient(-135deg, #04aa6d, #333);
+  background: -o-linear-gradient(-135deg, #04aa6d, #333);
+  background: -moz-linear-gradient(-135deg, #04aa6d(255, 0, 0), #333);
+  background: linear-gradient(-135deg, #04aa6d, #333);
+}
+

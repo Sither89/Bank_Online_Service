@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/sync_api.js"></script>
+    <link rel="stylesheet" href="/assets/topnav.css">
+    <link rel="stylesheet" href="/assets/profile.css">
+
+    <title>Profile</title>
+</head>
+
+<body onload="authen()">
+    <div class="color-background">
+        <div class="topnav">
+            <a class="" href="/profile">Home</a>
+            <div class="topnav-right">
+                <a href="/profile">Profile</a>
+                <a href="/" onclick="logout()">Logout</a>
+            </div>
+        </div>
+        <div class="jumbotron text-center" style="background-color: #97b770;">
+            <p style="font-size: 80px; color:rgb(0, 0, 0);">Bank Online Service</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="color: white;">Deposit money</h3>
+                    <form action="">
+                        <input type="number" id="deposit" class="btn_hyperlink" style="background-color: white;" placeholder="Enter money to deposit">
+                        <p></p>
+                        <button class="btn_hyperlink" onclick="deposit_process()" > Confirm </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

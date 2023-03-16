@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/profile.js"></script>
+    <script src="/js/sync_api.js"></script>
+    <link rel="stylesheet" href="/assets/topnav.css">
+    <link rel="stylesheet" href="/assets/profile.css">
+    <title>Profile</title>
+</head>
+
+<body onload="authen(),loadProfile()" >
+    <div class="color-background">
+        <div class="topnav">
+            <a class="active" href="/profile">Home</a>
+            <div class="topnav-right">
+                <a href="/profile" >Profile</a>
+                <a href="/" onclick="logout()">Logout</a>
+            </div>
+        </div>
+        <div class="jumbotron text-center" style="background-color: #97b770;">
+            <p style="font-size: 80px; color:rgb(0, 0, 0);">Bank Online Service</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" style="color:rgb(255, 255, 255)">
+                    <h3 >Hello <label id="namehome"></label></h3>
+                    <h3>Your Current balance : <label id="Cur_balance"></label></h3>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                   
+                </div>
+                <div class="col-sm-4">
+                    <br>
+                    <h1 style="color: white; text-align: center;">Choose service.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                   
+                </div>
+                <div class="col-sm-4">
+                    <br>
+                    <button class="btn_hyperlink"><a href="/deposit" class="hyperlink">Deposit money</a></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-4">
+                    <br>
+                    <button class="btn_hyperlink_withdraw"><a href="/withdraw" class="hyperlink">Withdraw money</a></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    
+                </div>
+                <div class="col-sm-6">
+                    <br>
+                    <button class="btn_hyperlink"><a href="/transfer" class="hyperlink">Transfer money to another
+                            user.</a></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <br>
+                    <button class="btn_hyperlink_tran"><a href="/transfer_history" class="hyperlink">Transfer
+                            history</a></button>
+                </div>
+                <div class="col-sm-6">
+                    <br>
+                    <button class="btn_hyperlink_tran"><a href="/receive_history" class="hyperlink">Receive
+                            history</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
