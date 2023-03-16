@@ -94,3 +94,13 @@ http://localhost:8080/
 ## Database
 * Database name : **BankDB**
   * Collection :  **transactions** , **users**
+  * Example data in users collection
+
+
+![image](https://user-images.githubusercontent.com/90314670/225601673-2735a9b9-bcc8-4a8e-9ca6-a69aece8031a.png)
+  * Example data in transactions
+
+
+![image](https://user-images.githubusercontent.com/90314670/225601547-b6c22e36-ebfa-4e44-8700-8a20b42bfb02.png)
+![image](https://user-images.githubusercontent.com/90314670/225601585-0ec94cf3-5769-42fc-af22-a37e0cfea029.png)
+
