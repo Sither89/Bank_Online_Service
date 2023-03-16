@@ -22,11 +22,16 @@ http://localhost:8080/
 
 ## First time setup 
 ### Windows
+* Download and install [Git](https://git-scm.com/downloads).
 * Download and install [Node.js](https://nodejs.org/en/).
 * Download and install [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 * Download and install [MongoDB](https://www.mongodb.com/try/download/community).
 * Download Project Bank_Online_Service
 ### MacOS
+* Install Git
+```
+brew install git
+```
 * Install Node.JS
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
@@ -43,6 +48,10 @@ brew install mongodb-community
 brew services start mongodb-community
 ```
 ### Ubuntu
+* Install Git
+```
+sudo apt update && sudo apt install git
+```
 * Install node 
 ```
 curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
@@ -79,6 +88,10 @@ sudo systemctl start mongod
 sudo systemctl enable mongod
 ```
 ### In project
+* Clone Project to your local
+```
+git clone https://github.com/Sither89/Bank_Online_Service.git
+```
 * Install the dependencies with npm. For server
 ```
 npm install
