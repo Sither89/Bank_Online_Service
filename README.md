@@ -20,12 +20,57 @@ docker compose up
 go to 
 http://localhost:8080/
 
-## First time setup
-
+## First time setup 
+### Windows
 * Download and install [Node.js](https://nodejs.org/en/).
 * Download and install [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 * Download and install [MongoDB](https://www.mongodb.com/try/download/community).
 * Download Project Bank_Online_Service
+### MacOS
+* Install Node.JS
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+nvm install 16
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+* Install MongoDB
+```
+brew install mongodb-community
+```
+* Run service MongoDB
+```
+brew services start mongodb-community
+```
+### Ubuntu
+* Install node 
+```
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt -y install nodejs
+```
+
+* Install MongoDB
+```
+wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+```
+ * if you receive an error indicating that gnupg is not installed, you can:
+```
+sudo apt-get install gnupg
+wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+```
+ * Create a list file for MongoDB.
+```
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+```
+ * Reload local package database.
+```
+sudo apt-get update
+```
+ * Install the MongoDB packages.
+```
+sudo apt-get install -y mongodb-org
+```
+### In project
 * Install the dependencies with npm. For server
 ```
 npm install
