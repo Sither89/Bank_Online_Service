@@ -23,6 +23,7 @@ http://localhost:8080/
 
 * Download and install [Node.js](https://nodejs.org/en/).
 * Download and install [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+* Download and install [MongoDB](https://www.mongodb.com/try/download/community).
 * Download Project Bank_Online_Service
 * Install the dependencies with npm. For server
 ```
