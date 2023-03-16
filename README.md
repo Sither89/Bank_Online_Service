@@ -55,7 +55,7 @@ wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add 
 ```
  * if you receive an error indicating that gnupg is not installed, you can:
 ```
-sudo apt-get install gnupg
+sudo apt install gnupg
 wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
 ```
  * Create a list file for MongoDB.
@@ -64,11 +64,11 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb
 ```
  * Reload local package database.
 ```
-sudo apt-get update
+sudo apt update
 ```
  * Install the MongoDB packages.
 ```
-sudo apt-get install -y mongodb-org
+sudo apt install -y mongodb-org
 ```
 ### In project
 * Install the dependencies with npm. For server
