@@ -72,6 +72,10 @@ sudo apt install -y mongodb-org
 ```
  * Start the MongoDB
 ```
+sudo systemctl start mongod
+```
+ * Set MongoDB will start following a system reboot 
+```
 sudo systemctl enable mongod
 ```
 ### In project
