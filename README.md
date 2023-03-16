@@ -11,7 +11,8 @@ go to
 http://localhost:8080/
 
 ## Run in docker container
-Open the project and run terminal following below
+* Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+* Open the project and run terminal following below
 
 ```
 docker compose up
@@ -45,3 +46,6 @@ http://localhost:8080/
 * Account 3
   * Username : Teerat89
   * Password : user12345
+## Database
+* Database name : **BankDB**
+  * Collection :  **transactions** , **users**
